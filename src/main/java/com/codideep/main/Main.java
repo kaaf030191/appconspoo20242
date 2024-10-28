@@ -4,7 +4,10 @@
 
 package com.codideep.main;
 
-import com.codideep.business.Operation;
+import com.codideep.business.PersonBusiness;
+import com.codideep.entity.Person;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -12,10 +15,15 @@ import com.codideep.business.Operation;
  */
 public class Main {
     public static void main(String[] args) {
-        Operation operation = new Operation();
+        List<Person> listPerson = new ArrayList<>();
         
-        float result = operation.sum(7, 5);
+        PersonBusiness personBusiness = new PersonBusiness();
         
-        System.out.println("El resultado de la suma es: " + result);
+        personBusiness.insert(listPerson);
+        System.out.println("");
+        personBusiness.insert(listPerson);
+        
+        System.out.println("----------------------------");
+        personBusiness.showListPerson(listPerson);
     }
 }
