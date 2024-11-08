@@ -4,10 +4,7 @@
 
 package com.codideep.main;
 
-import com.codideep.business.PersonBusiness;
-import com.codideep.entity.Person;
-import java.util.ArrayList;
-import java.util.List;
+import com.codideep.view.FrmPrincipal;
 
 /**
  *
@@ -15,15 +12,8 @@ import java.util.List;
  */
 public class Main {
     public static void main(String[] args) {
-        List<Person> listPerson = new ArrayList<>();
+        FrmPrincipal frmPrincipal = new FrmPrincipal();
         
-        PersonBusiness personBusiness = new PersonBusiness();
-        
-        personBusiness.insert(listPerson);
-        System.out.println("");
-        personBusiness.insert(listPerson);
-        
-        System.out.println("----------------------------");
-        personBusiness.showListPerson(listPerson);
+        frmPrincipal.setVisible(true);
     }
 }

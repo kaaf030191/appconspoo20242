@@ -59,7 +59,6 @@ public class PersonBusiness {
             System.out.println("Nombre: " + item.getFirstName());
             System.out.println("Apellido: " + item.getSurName());
             System.out.println("DNI: " + item.getDni());
-            
             System.out.println("Género: " + (item.isGender() ? "Masculino" : "Femenino"));
             
             System.out.println("---");
